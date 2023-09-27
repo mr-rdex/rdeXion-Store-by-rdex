@@ -1,0 +1,251 @@
+:root {
+    --bs-blue: #0d6efd;
+    --bs-indigo: #6610f2;
+    --bs-purple: #6f42c1;
+    --bs-pink: #d63384;
+    --bs-red: #dc3545;
+    --bs-orange: #fd7e14;
+    --bs-yellow: #ffc107;
+    --bs-green: #198754;
+    --bs-teal: #20c997;
+    --bs-cyan: #0dcaf0;
+    --bs-white: #fff;
+    --bs-gray: #6c757d;
+    --bs-gray-dark: #343a40;
+    --bs-gray-100: #f8f9fa;
+    --bs-gray-200: #e9ecef;
+    --bs-gray-300: #dee2e6;
+    --bs-gray-400: #ced4da;
+    --bs-gray-500: #adb5bd;
+    --bs-gray-600: #6c757d;
+    --bs-gray-700: #495057;
+    --bs-gray-800: #343a40;
+    --bs-gray-900: #212529;
+    --bs-primary: #0d6efd;
+    --bs-secondary: #6c757d;
+    --bs-success: #198754;
+    --bs-info: #0dcaf0;
+    --bs-warning: #ffc107;
+    --bs-danger: #dc3545;
+    --bs-light: #f8f9fa;
+    --bs-dark: #212529;
+    --bs-primary-rgb: 13, 110, 253;
+    --bs-secondary-rgb: 108, 117, 125;
+    --bs-success-rgb: 25, 135, 84;
+    --bs-info-rgb: 13, 202, 240;
+    --bs-warning-rgb: 255, 193, 7;
+    --bs-danger-rgb: 220, 53, 69;
+    --bs-light-rgb: 248, 249, 250;
+    --bs-dark-rgb: 33, 37, 41;
+    --bs-white-rgb: 255, 255, 255;
+    --bs-black-rgb: 0, 0, 0;
+    --bs-body-color-rgb: 33, 37, 41;
+    --bs-body-bg-rgb: 255, 255, 255;
+    --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+    --bs-body-font-family: var(--bs-font-sans-serif);
+    --bs-body-font-size: 1rem;
+    --bs-body-font-weight: 400;
+    --bs-body-line-height: 1.5;
+    --bs-body-color: #212529;
+    --bs-body-bg: #242424;
+  }
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #242424;
+}
+.signup-form{
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+    background: url(arkaplan.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;   
+    border: 2px solid darkred;
+    border-radius: 25px;
+}
+.signup-form h1{
+    color: #fff;
+    margin-top: 100px;
+    font-size: 40px;
+}
+.h2{
+    color:#439;
+    text-align: center;
+}
+.signup-form input{
+    display: block;
+    height: 34px;
+    padding: 0 16px;
+    text-align: center;
+    box-sizing: border-box;
+    border: none;  
+}
+.txt{
+    width: 100%;
+    margin: 10px 0;
+    border-radius: 10px;
+}
+.btnred
+        {
+            background-color: white;
+            border: none;
+            outline: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: #242424;
+            padding: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+            border: 1px black;
+			border-radius: 10px;
+            margin: auto;
+        }
+
+.btnred:hover
+        {
+            background-color: #439;
+            color: white;
+            border: 1px solid white;
+        }
+.btnblk
+        {
+            background-color: #242424;
+            border: none;
+            outline: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: white;
+            padding: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+			border-radius: 10px;
+            margin: auto;
+        }
+
+.btnblk:hover
+        {
+            background-color: red;
+            color: #242424;
+        }
+.button{
+    font-size: 12px;
+}
+textarea{
+    width: 95%;
+    margin: 10px 0;
+    border-radius: 10px;
+    text-align: center;
+}
+.btn{
+
+        border: none;
+        outline: none;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        color: #242424;
+        padding: 16px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 1px black;
+        border-radius: 10px;
+        margin: auto;
+
+}
+
+.footer{
+    font-family: var(--bs-body-font-family);
+}
+
+.footericon{
+    display: grid;
+    place-items: center;
+  }
+      .wrapper{
+      display: inline-flex;
+      list-style: none;
+  }
+  .wrapper .icon{
+      position: relative;
+      background: #242424;
+      border-radius: 50%;
+      padding: 15px; margin: 5px;
+      width: 20px; height: 20px;
+      font-size: 20px;
+      left: -15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .wrapper .tooltip{
+      position: absolute;
+      top: 0;
+      font-size: 14px;
+      background-color: #fff;
+      color: #fff;
+      padding: 5px 8px;
+      border-radius: 15px;
+      box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      pointer-events: none;
+      transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+      font-family: var(--bs-body-font-family);
+  }
+  .wrapper a{
+    text-decoration: none;
+    padding: 15px;
+  }
+  .wrapper .icon:hover .tooltip{
+      top: -35px;
+      opacity: 1;
+      visibility: visible;
+      pointer-events: auto;
+  }
+  .wrapper .icon:hover span,
+  .wrapper .icon:hover .tooltip{
+      text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+  }
+  .wrapper .facebook:hover,
+  .wrapper .facebook:hover .tooltip,
+  .wrapper .facebook:hover .tooltip::before{
+      background: #339966;
+      color: #fff;
+  }
+  .wrapper .twitter:hover,
+  .wrapper .twitter:hover .tooltip,
+  .wrapper .twitter:hover .tooltip::before{
+      background: #1DA1F2;
+      color: #fff;
+  }
+  .wrapper .instagram:hover,
+  .wrapper .instagram:hover .tooltip,
+  .wrapper .instagram:hover .tooltip::before{
+      background: #E4405F;
+      color: #fff;
+  }
+  .wrapper .youtube:hover,
+  .wrapper .youtube:hover .tooltip,
+  .wrapper .youtube:hover .tooltip::before{
+      background: #CD201F;
+      color: #fff;
+  }
+  
+  .text-white {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-white-rgb), var(--bs-text-opacity)) !important;
+  }
+
+  .text-black {
+    --bs-text-opacity: 1;
+    color: rgba(var(--bs-black-rgb), var(--bs-text-opacity)) !important;
+  }
