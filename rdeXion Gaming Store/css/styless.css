@@ -129,7 +129,7 @@ nav input{
     height: var(--max-height);
     max-width: var(--max-width);
     overflow: hidden;
-    position: relative;
+    position: absolute;
     width: 100%;
 }
 
@@ -140,7 +140,7 @@ nav input{
     height: var(--max-height);
     max-width: var(--max-width);
     overflow: hidden;
-    position: relative;
+    position: absolute;
     width: 100%;
     transition: 0.3s;
 }
@@ -2037,12 +2037,11 @@ button:hover .button-text {
 
 
 .footericon{
-  display: grid;
-  place-items: center;
+  display: static;
 }
     .wrapper{
-    display: inline-flex;
-    place-items: center;
+    display: flex;
+    justify-content: center;
     list-style: none;
 }
 .footertext{
@@ -2329,5 +2328,80 @@ __________________________________________________________
 .visible{
   opacity: 1;
   visibility: visible;
+}
+@media screen and (max-width: 625px) {
+  .containers {
+  }
+  .form .input-group{
+      transform: scale(0.85);
+  }
+  .learn-more{
+    transform: scale(0.70);
+  }
+  .footericon{
+    transform: scale(0.85);
+  }
+  .container{
+    transform: scale(0.85);
+  }
+}
+
+
+@media screen and (max-width: 450px) and (max-height: 925px) {
+  .containers {
+  }
+  .form .input-group{
+      transform: scale(0.65);
+  }
+  .learn-more{
+    transform: scale(0.60);
+  }
+  .footericon{
+    transform: scale(0.75);
+  }
+  .container{
+    transform: scale(0.65);
+  }
+}
+@media screen and (max-width: 395px) and (max-height: 900px) {
+  .containers {
+  }
+  .form .input-group{
+      transform: scale(0.60);
+  }
+  .learn-more{
+    transform: scale(0.60);
+  }
+  .footericon{
+    transform: scale(0.75);
+  }
+  .container{
+    transform: scale(0.65);
+  }
+  .body{
+    height: 78vh;
+  }
+}
+@media screen and (max-width: 300px) and (max-height: 700px) {
+  .containers {
+  }
+  .form .input-group{
+      transform: scale(0.45);
+  }
+  .button{
+      transform: scale(0.50);
+  }
+  .learn-more{
+    transform: scale(0.50);
+  }
+  .footericon{
+    transform: scale(0.50);
+  }
+  .container{
+    transform: scale(0.45);
+  }
+  .body{
+    height: 78vh;
+  }
 }
 
